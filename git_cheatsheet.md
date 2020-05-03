@@ -1,0 +1,16 @@
+- 绑定github账号
+  - 生成key: ssh-keygn -t rsa -C "baizhen9406@163.com";一直回车即可
+  - 复制id_rsa.pub中内容到github账号setting->SSH and GPG keys->SSH keys->New SSH keys中,保存即可
+  - 验证是否绑定成功: ssh -T git@github.com
+  - 设定username和email: 1. git config --global user.name "Thomas-Lee"; 2. git config --global user.email "baizhen9406@163.com"
+
+- 开始写项目
+  - 初始化: git init
+  - 将所有文件添加到仓库: git add .
+  - 建立远程连接(增添更新源): git remote add origin git@github.com:YourThomasLee/NLPer-Interview.git
+  - 拉取代码: git pull git@github.com:YourThomaLee/NLPer-Interview.git
+  - 把本地代码传到github上
+    - 增加所有文件到git管理: git add .
+    - 提交文件到仓库: git commit -m "first commit"
+    - 提交到githb上: git push git@github.com:YourThomasLee/NLPer-Interview.git; git push -u origin master
+    - 代码合并: git pull -rebase origin master
