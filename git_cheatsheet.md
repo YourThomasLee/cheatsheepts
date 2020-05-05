@@ -28,4 +28,9 @@
   git add .
   ```
 
-  
+- 问题: Please make sure you have the correct access rights and the repository exists
+
+  1.可能ssh key出现问题: ssh -T git@github.com检查
+
+  2.可能配置文件出现问题: cat .git/config, 出现问题修改下就可以
+
