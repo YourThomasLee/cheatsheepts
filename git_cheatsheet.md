@@ -14,3 +14,17 @@
     - 提交文件到仓库: git commit -m "first commit"
     - 提交到githb上: git push git@github.com:YourThomasLee/NLPer-Interview.git; git push -u origin master
     - 代码合并: git pull -rebase origin master
+  
+- 问题: The file will have its original line endings in your working directory
+
+  原因: 从别人github地址上通过git clone下载下来，而又想git push到自己的github上，那么就会出现上面提示的错误信息
+
+  执行以下代码:
+
+  ```bash
+  git rm -r --cached .
+  git config core.autocrlf false
+  git add .
+  ```
+
+  
