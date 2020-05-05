@@ -10,10 +10,11 @@
   - 建立远程连接(增添更新源): git remote add origin git@github.com:YourThomasLee/NLPer-Interview.git
   - 拉取代码: git pull git@github.com:YourThomaLee/NLPer-Interview.git
   - 把本地代码传到github上
-    - 增加所有文件到git管理: git add .
-    - 提交文件到仓库: git commit -m "first commit"
+    - 增加所有文件到cache中: git add .
+    - 提交cache中的文件到仓库: git commit -m "first commit"
     - 提交到githb上: git push git@github.com:YourThomasLee/NLPer-Interview.git; git push -u origin master
     - 代码合并: git pull -rebase origin master
+  - 更新: 简单粗暴的将所有已经跟踪文件的更新同步到库中 git commit -am "message" 
   
 - 问题: The file will have its original line endings in your working directory
 
